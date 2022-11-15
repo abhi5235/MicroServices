@@ -1,0 +1,13 @@
+server:
+  port: 8650
+spring:
+  application:
+    name: contact-service
+  cloud:
+    consul:
+      config:
+        enabled: true
+        default-context: application
+        prefixes: config
+        profile-separator: '::'
+        format: YAML  

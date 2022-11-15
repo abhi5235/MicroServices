@@ -1,0 +1,14 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: user-service
+  cloud:
+    consul:
+      config:
+        enabled: true
+        default-context: application
+        prefixes: config
+        profile-separator: '::'
+        format: YAML
+            
